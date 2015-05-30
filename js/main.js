@@ -1,6 +1,8 @@
 /**
  * Created by changqi on 15/5/27.
  */
+
+window.scrollTo(0,0);
 $(document).ready(function () {
     window.scrollTo(0,0);
     $('#fullpage').fullpage({
@@ -15,6 +17,7 @@ $(document).ready(function () {
         afterLoad: function (anchorLink, index) {
             console.log("afterRender", anchorLink, index);
 
+            window.scrollTo(0,0);
             switch (index) {
                 case 1:
                     $(".pic1").transition({

@@ -308,7 +308,7 @@
 */
 
 body{
-    font-family: "Microsoft YaHei", "微软雅黑";
+    font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", arial, helvetica, sans-serif;
 }
 .intro.picture{
     position: absolute;
