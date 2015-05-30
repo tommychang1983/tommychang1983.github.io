@@ -308,7 +308,7 @@
 */
 
 body{
-    font-family: "Microsoft YaHei", "微软雅黑", "Helvetica Neue", arial, helvetica, sans-serif;
+    font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu,  "Helvetica Neue", arial;
 }
 .intro.picture{
     position: absolute;
@@ -345,6 +345,7 @@ body{
     left: 30px;
     position: absolute;
     font-size: 45px;
+    font-weight: 700;
     color:#000;
     text-shadow : 0px 0px 30px #fff;
     opacity: 0.9;
@@ -356,6 +357,7 @@ body{
     left:60px;
     position: absolute;
     font-size: 24px;
+    font-weight: 700;
     color:#000;
     text-shadow : 0px 0px 30px #fff;
     opacity: 0.9;
@@ -369,6 +371,7 @@ body{
     left:90px;
     position: absolute;
     font-size: 24px;
+    font-weight: 700;
     color:#000;
     text-shadow : 0px 0px 30px #fff;
     opacity: 0.9;
@@ -379,6 +382,7 @@ body{
 .intro2{
     position: absolute;
     font-size: 26px;
+    font-weight: 700;
     left:0;
     right:0;
     text-align: center;
@@ -392,6 +396,7 @@ body{
 .intro2-7{
     position: absolute;
     font-size: 26px;
+    font-weight: 700;
     left:0;
     right:0;
     text-align: center;
@@ -406,6 +411,7 @@ body{
 .intro3-0{
     position: absolute;
     font-size: 30px;
+    font-weight: 700;
     left:0;
     right:0;
     text-align: center;
