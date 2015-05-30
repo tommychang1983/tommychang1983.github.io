@@ -2,6 +2,7 @@
  * Created by changqi on 15/5/27.
  */
 $(document).ready(function () {
+    window.scrollTo(0,0);
     $('#fullpage').fullpage({
         scrollingSpeed: 700,
         touchSensitivity: 15,
