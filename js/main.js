@@ -266,6 +266,35 @@ $(document).ready(function () {
                      })*/
 
                     break;
+                case 3:
+
+                    $(".pic3").transition({
+                        y: "-250px",
+                        x: "150px"
+                    }, 100000, "linear");
+
+                    $(".intro5-0").transition({
+                        opacity:1,
+                        delay:1000
+                    })
+
+                    $(".intro4-0,.intro5-0").transition({
+                        y: "150px"
+                    }, 300000, "linear");
+
+
+                    break;
+                case 4:
+                    $(".pic4").transition({
+                        y: "350px"
+                    }, 100000, "linear");
+
+
+                    $(".intro6-0,.intro7-0,.intro7-1").transition({
+                        y: "-150px"
+                    }, 300000, "linear");
+
+                    break;
             }
 
 
