@@ -30,7 +30,7 @@ $(document).ready(function () {
                                 effect: 'fadeIn',
                                 delay: 200
                             },
-                            initialDelay: 1000
+                            initialDelay: 500
                         });
 
                     $(".intro1-1")
@@ -39,7 +39,7 @@ $(document).ready(function () {
                                 effect: 'fadeIn',
                                 delay: 200
                             },
-                            initialDelay: 2000
+                            initialDelay: 1000
                         });
 
                     $(".intro1-2")
@@ -48,7 +48,24 @@ $(document).ready(function () {
                                 effect: 'fadeIn',
                                 delay: 200
                             },
+                            initialDelay: 2500
+                        });
+
+                    $(".intro1-3")
+                        .textillate({
+                            in: {
+                                effect: 'fadeInDown',
+                                delay: 100
+                            },
                             initialDelay: 4000
+                        });
+                    $(".intro1-4")
+                        .textillate({
+                            in: {
+                                effect: 'fadeInDown',
+                                delay: 100
+                            },
+                            initialDelay: 4500
                         });
 
                     /*
