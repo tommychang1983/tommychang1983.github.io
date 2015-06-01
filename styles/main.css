@@ -658,17 +658,17 @@ frame5 十年努力
 
 .frame-move1 {
     -webkit-animation-name: f-frame-move1 ;
-    -webkit-animation-duration: 130s;
+    -webkit-animation-duration: 100s;
     -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function: ease;
 }
 
 @-webkit-keyframes f-frame-move1 {
     0% {
-        background-position: -100px -100px;
+        background-position-x: -100px;
     }
     100% {
-        background-position: -230px -130px;
+        background-position-x: -230px;
     }
 }
 
