@@ -382,7 +382,7 @@ frame4 校园
 frame5 十年努力
 */
 .intro8-0 {
-    top: 380px;
+    bottom:190px;
     left: 30px;
     position: absolute;
     font-size: 60px;
@@ -398,7 +398,7 @@ frame5 十年努力
 }
 
 .intro8-1 {
-    top: 470px;
+    bottom:120px;
     left: 30px;
     position: absolute;
     font-size: 34px;
@@ -410,7 +410,7 @@ frame5 十年努力
 }
 
 .intro9-0 {
-    top: 520px;
+    bottom:60px;
     left: 30px;
     position: absolute;
     font-size: 34px;
@@ -634,7 +634,7 @@ frame5 十年努力
     left: 50%;
     margin-left: -160px;
     top: 20px;
-    z-index: 5;
+    z-index: 2;
     box-shadow: inset 0px 0px 30px #fff, 0px 0px 10px #000;
     -webkit-transform: rotate(8deg);
     -moz-transform: rotate(8deg);
@@ -653,7 +653,7 @@ frame5 十年努力
     margin-left: -160px;
     top: 50%;
     margin-top: -100px;
-    z-index: 2;
+    z-index: 5;
     box-shadow: inset 0px 0px 30px #fff, 0px 0px 10px #000;
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
@@ -671,7 +671,7 @@ frame5 十年努力
     left: 50%;
     margin-left: -160px;
     bottom: 20px;
-    z-index: 5;
+    z-index: 7;
     box-shadow: inset 0px 0px 30px #fff, 0px 0px 10px #000;
     -webkit-transform: rotate(5deg);
     -moz-transform: rotate(5deg);
