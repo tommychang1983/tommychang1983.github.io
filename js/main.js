@@ -2,9 +2,9 @@
  * Created by changqi on 15/5/27.
  */
 
-window.scrollTo(0,0);
+window.scrollTo(0, 0);
 $(document).ready(function () {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     $('#fullpage').fullpage({
         scrollingSpeed: 700,
         touchSensitivity: 15,
@@ -16,8 +16,124 @@ $(document).ready(function () {
         },
         afterLoad: function (anchorLink, index) {
             console.log("afterRender", anchorLink, index);
+            $(".intro1-0")
+                .textillate({
+                    in: {
+                        effect: 'fadeIn',
+                        delay: 200
+                    },
+                    initialDelay: 500,
+                    autoStart: false
+                });
 
-            window.scrollTo(0,0);
+            $(".intro1-1")
+                .textillate({
+                    in: {
+                        effect: 'fadeIn',
+                        delay: 200
+                    },
+                    initialDelay: 1500,
+                    autoStart: false
+                });
+
+            $(".intro1-2")
+                .textillate({
+                    in: {
+                        effect: 'fadeIn',
+                        delay: 200
+                    },
+                    initialDelay: 2500,
+                    autoStart: false
+                });
+
+            $(".intro1-3")
+                .textillate({
+                    in: {
+                        effect: 'fadeInDown',
+                        delay: 200
+                    },
+                    initialDelay: 5000,
+                    autoStart: false
+                });
+            $(".intro1-4")
+                .textillate({
+                    in: {
+                        effect: 'fadeInDown',
+                        delay: 100
+                    },
+                    initialDelay: 5000,
+                    autoStart: false
+                });
+            $(".intro3-0")
+                .on("inAnimationBegin.tlt", function () {
+                    $(this).css({opacity: 1});
+                })
+                .textillate({
+                    in: {
+                        effect: 'wobble',
+                        delay: 200
+                    },
+                    initialDelay: 2000,
+                    autoStart: false
+                });
+            $(".intro6-0")
+                .textillate({
+                    in: {
+                        effect: 'fadeInLeft',
+                        delay: 200
+                    },
+                    initialDelay: 0,
+                    autoStart: false
+                });
+            $(".intro7-0")
+                .textillate({
+                    in: {
+                        effect: 'fadeInLeft',
+                        delay: 200
+                    },
+                    initialDelay: 2000,
+                    autoStart: false
+                });
+            $(".intro7-1")
+                .textillate({
+                    in: {
+                        effect: 'fadeInLeft',
+                        delay: 200
+                    },
+                    initialDelay: 3000,
+                    autoStart: false
+                });
+
+            $(".intro8-0")
+                .textillate({
+                    in: {
+                        effect: 'fadeIn',
+                        delay: 200
+                    },
+                    initialDelay: 500,
+                    autoStart: false
+                });
+            $(".intro8-1")
+                .textillate({
+                    in: {
+                        effect: 'fadeIn',
+                        delay: 200
+                    },
+                    initialDelay: 1500,
+                    autoStart: false
+                });
+            $(".intro9-0")
+                .textillate({
+                    in: {
+                        effect: 'fadeIn',
+                        delay: 200
+                    },
+                    initialDelay: 3000,
+                    autoStart: false
+                });
+
+
+            window.scrollTo(0, 0);
             switch (index) {
                 case 1:
                     $(".pic1").transition({
@@ -25,48 +141,18 @@ $(document).ready(function () {
                     }, 100000, "linear");
 
                     $(".intro1-0")
-                        .textillate({
-                            in: {
-                                effect: 'fadeIn',
-                                delay: 200
-                            },
-                            initialDelay: 500
-                        });
+                        .textillate('start');
 
                     $(".intro1-1")
-                        .textillate({
-                            in: {
-                                effect: 'fadeIn',
-                                delay: 200
-                            },
-                            initialDelay: 1000
-                        });
+                        .textillate('start');
 
                     $(".intro1-2")
-                        .textillate({
-                            in: {
-                                effect: 'fadeIn',
-                                delay: 200
-                            },
-                            initialDelay: 2500
-                        });
+                        .textillate('start');
 
                     $(".intro1-3")
-                        .textillate({
-                            in: {
-                                effect: 'fadeInDown',
-                                delay: 100
-                            },
-                            initialDelay: 4000
-                        });
+                        .textillate('start');
                     $(".intro1-4")
-                        .textillate({
-                            in: {
-                                effect: 'fadeInDown',
-                                delay: 100
-                            },
-                            initialDelay: 4500
-                        });
+                        .textillate('start');
 
                     /*
                      $(".intro1-0")
@@ -160,7 +246,7 @@ $(document).ready(function () {
 
                     var year = document.querySelector('.intro2-1');
                     var month = document.querySelector('.intro2-3');
-                    var day =  document.querySelector('.intro2-5');
+                    var day = document.querySelector('.intro2-5');
 
                     var oYear = new Odometer({
                         el: year,
@@ -184,23 +270,14 @@ $(document).ready(function () {
                         theme: 'default'
                     });
 
-                    setTimeout(function(){
+                    setTimeout(function () {
                         oYear.update(2005);
                         oMonth.update(9)
                         oDay.update(11);
-                    },0);
+                    }, 0);
 
                     $(".intro3-0")
-                        .on("inAnimationBegin.tlt",function(){
-                            $(this).css({opacity:1});
-                        })
-                        .textillate({
-                            in: {
-                                effect: 'wobble',
-                                delay: 100
-                            },
-                            initialDelay: 2000
-                        });
+                        .textillate('start');
 
                     /*
                      $(".intro4-0")
@@ -274,26 +351,43 @@ $(document).ready(function () {
                     }, 100000, "linear");
 
                     $(".intro5-0").transition({
-                        opacity:1,
-                        delay:1000
+                        opacity: 1,
+                        delay: 1000
                     })
 
-                    $(".intro4-0,.intro5-0").transition({
-                        y: "150px"
-                    }, 300000, "linear");
 
+                    /*TODO:
+                     $(".intro4-0,.intro5-0").transition({
+                     y: "150px"
+                     }, 30000, "linear");
+                     */
 
                     break;
                 case 4:
                     $(".pic4").transition({
-                        y: "350px"
+                        y: "-350px",
                     }, 100000, "linear");
 
 
-                    $(".intro6-0,.intro7-0,.intro7-1").transition({
-                        y: "-150px"
-                    }, 300000, "linear");
+                    $(".intro6-0")
+                        .textillate('start');
+                    $(".intro7-0")
+                        .textillate('start');
+                    $(".intro7-1")
+                        .textillate('start');
+                    break;
+                case 5:
 
+                    $(".pic5").addClass("frame-move1");
+
+                    $(".intro8-0")
+                        .textillate('start');
+                    $(".intro8-1")
+                        .textillate('start');
+                    $(".intro9-0")
+                        .textillate('start');
+                    break;
+                case 6:
                     break;
             }
 

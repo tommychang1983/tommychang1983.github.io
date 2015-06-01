@@ -30,6 +30,10 @@
     background-image: url("../image/bg_7.jpg");
 }
 
+#section4 {
+    background-image: url("../image/bg_8.jpg");
+}
+
 .intro {
     color: #fff;
     font-size: 18px;
@@ -352,15 +356,43 @@ body {
 .pic4 {
     background-image: url("../image/pic4.jpg");
     position: absolute;
-    width: 320px;
-    height: 200px;
-    background-size: 320px 200px;
-    left: -160px;
-    top: 80px;
+    width: 400px;
+    height: 280px;
+    background-size: 400px 280px;
+    left: 50%;
+    margin-left:-200px;
+    bottom: 80px;
     z-index: 1;
     box-shadow: inset 0px 0px 30px #fff, 0px 0px 10px #000;
 }
 
+.pic5{
+    background-image: url("../image/pic5.jpg");
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-size: 640px 480px;
+    top: 20px;
+    z-index: 1;
+    box-shadow: inset 0px 0px 30px #fff, 3px 3px 10px #000,3px 3px 30px #000,3px 3px 60px #000;
+    overflow: hidden;
+    background-position: -100px -100px;
+}
+
+.pic6{
+    background-image: url("../image/pic6.jpg");
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-size: 640px 480px;
+    top: 20px;
+    z-index: 1;
+    box-shadow: inset 0px 0px 30px #fff, 3px 3px 10px #000,3px 3px 30px #000,3px 3px 60px #000;
+    overflow: hidden;
+    background-position: -100px -100px;
+}
 /**
 frame 1
 */
@@ -381,7 +413,7 @@ frame 1
 }
 
 .intro1-1 {
-    top: 65px;
+    top: 78px;
     left: 100px;
     position: absolute;
     font-size: 34px;
@@ -397,7 +429,7 @@ frame 1
 }
 
 .intro1-2 {
-    top: 120px;
+    top: 130px;
     left: 60px;
     position: absolute;
     font-size: 34px;
@@ -537,30 +569,109 @@ frame 3
 }
 
 /*
-frame4
+frame4 校园
 */
 .intro6-0 {
+    top: 50px;
+    left: 30px;
     position: absolute;
     font-size: 60px;
     font-weight: 700;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: auto;
-    top: 90px;
     color: #000;
+    text-shadow: 0px 0px 10px #fff,
+    0px 0px 20px #fff,
+    0px 0px 30px #fff,
+    0px 0px 40px #fff;
+
     opacity: 0.9;
     z-index: 10;
-    text-shadow: 1px -1px 0 #767676,
-    -1px 2px 1px #737272,
-    -2px 4px 1px #767474,
-    -3px 6px 1px #787777,
-    -4px 8px 1px #7b7a7a,
-    -5px 10px 1px #7f7d7d,
-    -6px 12px 1px #828181,
-    -7px 14px 1px #868585,
-    -8px 16px 1px #8b8a89;
 }
+
+.intro7-0,.intro7-1{
+    position: absolute;
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0px 0px 10px #fff,
+    0px 0px 20px #fff,
+    0px 0px 30px #fff,
+    0px 0px 40px #fff;
+
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.intro7-0{
+    top: 150px;
+    left: 30px;
+}
+
+.intro7-1{
+    top: 200px;
+    left: 30px;
+
+}
+
+/*
+frame5 十年努力
+*/
+.intro8-0 {
+    top: 380px;
+    left: 30px;
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000,
+    0px 0px 20px #000,
+    0px 0px 30px #000,
+    0px 0px 40px #000;
+
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.intro8-1 {
+    top:470px;
+    left: 30px;
+    position: absolute;
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.intro9-0 {
+    top: 520px;
+    left: 30px;
+    position: absolute;
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+
+.frame-move1 {
+    -webkit-animation-name: f-frame-move1 ;
+    -webkit-animation-duration: 130s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes f-frame-move1 {
+    0% {
+        background-position: -100px -100px;
+    }
+    100% {
+        background-position: -230px -130px;
+    }
+}
+
 
 /*.arrowing {
     animation-name: arrowing;
